@@ -8,19 +8,19 @@ public class App
 {
     public static void main( String[] args )
     { 
-    	Expression person1 = new TerminalExpression("Deepika"); 
-    Expression person2 = new TerminalExpression("Mani"); 
+    	Expression person1 = new TerminalExpression("Pavani"); 
+    Expression person2 = new TerminalExpression("Priyanka");
     Expression isSingle = new OR(person1, person2); 
       
-    Expression lakshmi= new TerminalExpression("Lakshmi"); 
+    Expression krishna= new TerminalExpression("Krishna"); 
     Expression committed = new TerminalExpression("Committed"); 
-    Expression isCommitted = new AND(lakshmi, committed);     
+    Expression isCommitted = new AND(krishna, committed);     
 
-    System.out.println(isSingle.interpreter("Deepika")); 
-    System.out.println(isSingle.interpreter("Mani")); 
-    System.out.println(isSingle.interpreter("Kusu")); 
+    System.out.println(isSingle.interpreter("Pavani")); 
+    System.out.println(isSingle.interpreter("Priyanka")); 
+    System.out.println(isSingle.interpreter("Madeti")); 
       
-    System.out.println(isCommitted.interpreter("Committed, Laskhmi")); 
+    System.out.println(isCommitted.interpreter("Committed,krishna")); 
      
     }
 }
